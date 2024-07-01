@@ -60,7 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .imageProfile>img {
@@ -118,7 +118,7 @@
     height: 50px;
     border: 2px solid #008c72;
     font-family: cursive;
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
 }
 
