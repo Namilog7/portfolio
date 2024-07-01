@@ -1,9 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
 .navBar {
     width: 100%;
-    height: 80px;
-    background-color: rgba(184, 15, 236, 0.9);
+    height: 70px;
     display: flex;
-    gap: 15px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    animation: navScale 1s ease-in-out;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(5px);
+}
+
+.navBar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: scrollNav;
+    animation-timeline: scroll(root block);
+}
+
+.navBar div:nth-child(2) {
+    display: flex;
+    gap: 10px;
+    padding-right: 30px;
+    color: white;
+    font-size: larger;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navBar div:nth-child(1) {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    color: aliceblue;
+    padding-left: 30px;
+    z-index: 10;
+}
+
+.navBar div:nth-child(1) span {
+    color: #008c72;
+}
+
+
+.links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease-in-out;
+}
+
+.links:hover::after {
+    width: 100%;
+}
+
+.links {
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+@keyframes navScale {
+    from {
+        transform: scale(.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scrollNav {
+    100% {
+        border-bottom: 1px solid wheat;
+    }
 }

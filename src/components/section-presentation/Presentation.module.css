@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX&family=Roboto&family=Saira+Condensed:wght@500&family=Teko:wght@300..700&display=swap');
+
+.section {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.presentation {
+    width: 30%;
+    color: aliceblue;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}
+
+.presentation div:nth-child(1) p {
+    margin: 0;
+    padding: 0;
+}
+
+.presentation div:nth-child(3) p {
+    margin: 0;
+    padding: 0;
+}
+
+.presentation div:nth-child(1) {
+    animation: animPresent 1s ease-in-out;
+}
+
+.presentation div:nth-child(2) {
+    animation: animPresent 1s ease-in-out .2s backwards;
+}
+
+.presentation div:nth-child(3) {
+    animation: animPresent 1s ease-in-out .5s backwards;
+}
+
+.presentation div:nth-child(4) {
+    animation: animPresent 1s ease-in-out .8s backwards;
+}
+
+.presentation>div {
+    margin: 0;
+    padding: 0;
+}
+
+.imageProfile {
+    width: 20%;
+    height: 55%;
+    animation: animPresentInverse 1.5s ease-in-out backwards;
+    overflow: hidden;
+    border: 2px solid #008c72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imageProfile>img {
+    width: 98%;
+    height: 98%;
+    border-radius: 0%;
+}
+
+.name {
+    color: #008c72;
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    text-shadow: -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.namespan {
+    color: #008c72;
+}
+
+@keyframes animPresent {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animPresentInverse {
+    from {
+        transform: translateX(60%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.divButton {
+    text-align: center;
+}
+
+.buttonCv {
+    background-color: #004e5c;
+    width: 130px;
+    height: 50px;
+    border: 2px solid #008c72;
+    font-family: cursive;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.buttonCv:hover {
+    background-color: #008c72;
+    cursor: pointer;
+    color: wheat;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
