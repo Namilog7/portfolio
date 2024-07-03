@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX&family=Roboto&family=Saira+Condensed:wght@500&family=Teko:wght@300..700&display=swap');
 
 .section {
-    height: 90%;
+    width: 70%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-
+    justify-content: space-between;
 }
 
 .presentation {
-    width: 30%;
+    width: 40%;
     color: aliceblue;
     font-family: "Saira Condensed", sans-serif;
     font-weight: 500;
@@ -52,11 +53,11 @@
 }
 
 .imageProfile {
-    width: 20%;
-    height: 55%;
+    width: 25%;
+    height: 70%;
     animation: animPresentInverse 1.5s ease-in-out backwards;
     overflow: hidden;
-    border: 2px solid #008c72;
+    border: 2px solid yellowgreen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,17 +110,23 @@
 }
 
 .divButton {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .buttonCv {
     background-color: #004e5c;
-    width: 130px;
+    width: 150px;
     height: 50px;
     border: 2px solid #008c72;
-    font-family: cursive;
+    font-family: system-ui;
+    font-weight: bolder;
+    font-size: medium;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .buttonCv:hover {

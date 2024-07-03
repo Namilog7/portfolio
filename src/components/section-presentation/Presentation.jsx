@@ -1,4 +1,5 @@
-import style from "./Presentation.module.css"
+import style from "./Presentation.module.css";
+import { FaFileDownload } from "react-icons/fa";
 
 export const Presentation = () => {
     return (
@@ -13,9 +14,14 @@ export const Presentation = () => {
                 <div>
                     <p>Desarrollador <span className={style.namespan}>Full Stack </span>
                         buscando ganar experiencia orientada al <span className={style.namespan}>Frontend</span>,
-                        proactivo y aunque me gusta ser autodidacta, con mentoría podria aprender mucho mas rápido.</p>
+                        proactivo y aunque me gusta ser autodidacta, con mentoría podría aprender mucho mas rápido.</p>
                 </div>
-                <div className={style.divButton}><button className={style.buttonCv}>Descargar CV</button></div>
+                <div className={style.divButton}>
+
+                    <button className={style.buttonCv}>
+                        <FaFileDownload className={style.filecv} />
+                        Descargar CV</button>
+                </div>
             </div>
             <div className={style.imageProfile}>
                 <img src="/fotoportfolio.jpg" alt="fotoperfil" />
