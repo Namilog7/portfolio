@@ -8,6 +8,7 @@
     align-items: start;
     border-bottom: 20px solid black;
     padding-top: 15px;
+    margin-top: 70px;
 }
 
 .footer h4 {
@@ -102,10 +103,11 @@
     width: 67%;
     height: 30px;
     border: 1px solid #008c72;
+    background-color: yellowgreen;
 }
 
 .button:hover {
-    background-color: yellowgreen;
+    background-color: rgb(84, 216, 7);
     color: aliceblue;
     border: 1px solid #004e5c;
 }

@@ -5,10 +5,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
+import { forwardRef } from "react";
 
-export const Footer = () => {
+export const Footer = forwardRef((_, ref) => {
     return (
-        <footer className={style.footer}>
+        <footer className={style.footer} ref={ref}>
             <div className={style.container}>
                 <div className={style.contact}>
                     <div className={style.contactdata}>
@@ -40,4 +41,4 @@ export const Footer = () => {
             </div>
         </footer>
     )
-}
+})
