@@ -2,9 +2,17 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiRedux } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaCss3 } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
 
 
-const iconsForStack = {
+export const iconsForStack = {
+    javascript: {
+
+        icon: SiJavascript
+    },
     react: {
         link: "https://react.dev",
         icon: FaReact
@@ -20,6 +28,16 @@ const iconsForStack = {
     nodejs: {
         link: "https://nodejs.org/",
         icon: FaNodeJs
+    },
+    expressjs: {
+        link: "https://expressjs.com",
+        icon: SiExpress
+    },
+    css: {
+        icon: FaCss3
+    },
+    html: {
+        icon: FaHtml5
     }
 }
 

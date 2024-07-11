@@ -19,8 +19,8 @@ export const Presentation = () => {
                         proactivo y aunque me gusta ser autodidacta, con mentoría podría aprender mucho mas rápido.</p>
                 </div>
                 <div className={style.divButton}>
-                    <a href="" className={style.links}><FaGithub className={style.icons} />   </a>
-                    <a href="" className={style.links}><FaLinkedin className={style.icons} />   </a>
+                    <a href="https://github.com/Namilog7" target="_blank" className={style.links}><FaGithub className={style.icons} />   </a>
+                    <a href="https://www.linkedin.com/in/gonzalo-david-baez-noriega/" target="_blank" className={style.links}><FaLinkedin className={style.icons} />   </a>
                     <button className={style.buttonCv}>
                         <FaFileDownload className={style.filecv} />
                         Descargar CV</button>

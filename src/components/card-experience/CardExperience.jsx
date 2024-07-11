@@ -13,8 +13,8 @@ export const CardExperience = ({ name, url, detail, stack, linkExperience }) => 
                 <p>{detail} </p>
                 <h3>Stack</h3>
                 <div className={style.stack}>
-                    {stack?.map(st => {
-                        return <a href={st.link} target="_blank" className={style.a}><st.icon className={style.icons} /></a>
+                    {stack?.map((st, index) => {
+                        return <a href={st.link} target="_blank" className={style.a} key={index}><st.icon className={style.icons} /></a>
                     })}
                 </div>
             </div>
