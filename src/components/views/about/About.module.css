@@ -2,33 +2,32 @@
 
 .section {
     width: 100%;
-    height: auto;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 65px;
 }
 
 .about {
-    width: 70%;
-    height: 500px;
-
+    width: 65%;
+    height: 450px;
     position: relative;
     display: flex;
     overflow: hidden;
-    background-color: transparent;
 }
 
 .nav {
     width: 20%;
     height: 100%;
-    border-right: 1px solid yellowgreen;
+    border: 1px solid yellowgreen;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: #008c72;
     position: relative;
-    z-index: 1;
+    z-index: 5;
 }
 
 .links {
@@ -94,12 +93,17 @@
     font-family: "Bevan", serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: 0;
 }
 
 .routes {
     width: 80%;
     overflow: hidden;
     position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .routes::after {
@@ -111,7 +115,7 @@
     height: 100%;
     background-image: url("https://wallpaperaccess.com/full/1338376.jpg");
     background-size: cover;
-    opacity: .2;
+    z-index: -1;
 }
 
 @keyframes changeView {

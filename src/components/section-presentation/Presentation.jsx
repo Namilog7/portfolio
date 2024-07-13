@@ -4,6 +4,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export const Presentation = () => {
+    const downloadCv = () => {
+        const link = document.createElement("a")
+        link.href = "GonzaloBaez-CV.pdf"
+        link.download = "Gonzalo-Baez-CV.pdf"
+        link.click()
+    }
+
     return (
         <section className={style.section}>
             <div className={style.presentation}>
@@ -21,7 +28,7 @@ export const Presentation = () => {
                 <div className={style.divButton}>
                     <a href="https://github.com/Namilog7" target="_blank" className={style.links}><FaGithub className={style.icons} />   </a>
                     <a href="https://www.linkedin.com/in/gonzalo-david-baez-noriega/" target="_blank" className={style.links}><FaLinkedin className={style.icons} />   </a>
-                    <button className={style.buttonCv}>
+                    <button className={style.buttonCv} onClick={downloadCv}>
                         <FaFileDownload className={style.filecv} />
                         Descargar CV</button>
                 </div>

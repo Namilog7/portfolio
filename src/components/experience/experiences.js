@@ -10,33 +10,40 @@ import { FaHtml5 } from "react-icons/fa";
 
 export const iconsForStack = {
     javascript: {
-
+        name: "Javascript",
         icon: SiJavascript
     },
     react: {
+        name: "ReactJS",
         link: "https://react.dev",
         icon: FaReact
     },
     tailwind: {
+        name: "TailwindCss",
         link: "https://tailwindcss.com",
         icon: RiTailwindCssFill
     },
     reduxToolkit: {
+        name: "RTK",
         link: "https://redux-toolkit.js.org/",
         icon: SiRedux
     },
     nodejs: {
+        name: "NodeJS",
         link: "https://nodejs.org/",
         icon: FaNodeJs
     },
     expressjs: {
+        name: "ExpressJS",
         link: "https://expressjs.com",
         icon: SiExpress
     },
     css: {
+        name: "Css",
         icon: FaCss3
     },
     html: {
+        name: "Html",
         icon: FaHtml5
     }
 }

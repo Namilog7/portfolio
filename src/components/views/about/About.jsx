@@ -4,22 +4,22 @@ import { Link, Route, Routes, useLocation } from "react-router-dom"
 import { Stack } from "../../componentsAbout/stack/Stack"
 import { Learning } from "../../componentsAbout/learning/Learning"
 import { Certifieds } from "../../componentsAbout/certifieds/Certifieds"
-import { useRef } from "react"
+import { forwardRef, useRef } from "react"
 
-export const About = () => {
+export const About = forwardRef((_, ref) => {
     const match = useLocation();
-    const ref = useRef(null);
+    const refA = useRef(null);
 
     const addAnimation = (e) => {
         if (e.target.id === match.pathname) return console.log("ya esta")
-        ref.current.classList.add(style.animation)
+        refA.current.classList.add(style.animation)
         setTimeout(() => {
-            ref.current.classList.remove(style.animation)
+            refA.current.classList.remove(style.animation)
         }, 500)
     }
 
     return (
-        <section className={style.section}>
+        <section className={style.section} ref={ref}>
             <h2>Sobre mi & Stack</h2>
             <div className={style.about} >
                 <nav className={style.nav} >
@@ -33,7 +33,7 @@ export const About = () => {
                         <Link to="/certifieds" style={{ textDecoration: "none" }} > <p id="/certifieds" onClick={() => addAnimation(event)} className={match.pathname == "/certifieds" ? style.active : null} >Certificados</p> </Link>
                     </div>
                 </nav>
-                <div className={style.routes} ref={ref}>
+                <div className={style.routes} ref={refA}>
                     <Routes>
                         <Route path="/aboutme" element={<AboutMe />} />
                         <Route path="/stack" element={<Stack />} />
@@ -44,4 +44,4 @@ export const About = () => {
             </div>
         </section >
     )
-}
+})

@@ -9,7 +9,8 @@ import { About } from "./components/views/about/About.jsx";
 function App() {
   const section1 = useRef(null);
   const section2 = useRef(null);
-  const section3 = useRef(null);
+  const section3 = useRef(null)
+  const section4 = useRef(null);
 
   const scrollComponent = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth', block: "end" })
@@ -18,11 +19,11 @@ function App() {
 
   return (
     <>
-      <NavBar section1={section1} section2={section2} section3={section3} scrollComponent={scrollComponent} />
+      <NavBar section1={section1} section2={section2} section3={section3} section4={section4} scrollComponent={scrollComponent} />
       <Header ref={section1} />
       <Main ref={section2} />
-      <About />
-      <Footer ref={section3} />
+      <About ref={section3} />
+      <Footer ref={section4} />
     </>
   );
 }
