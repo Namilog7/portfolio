@@ -89,6 +89,7 @@
 
 .icons:hover {
     color: yellowgreen;
+    cursor: pointer;
 }
 
 .a:visited {
@@ -109,5 +110,9 @@
 @media (max-width: 950px) {
     .card {
         transform: scale(.8);
+    }
+
+    .data {
+        width: 80%;
     }
 }

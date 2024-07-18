@@ -37,11 +37,6 @@
     display: block;
 }
 
-.icons:hover {
-    color: #004e5c;
-    cursor: pointer;
-}
-
 .link {
     width: max-content;
     height: max-content;

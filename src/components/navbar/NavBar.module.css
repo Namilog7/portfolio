@@ -93,3 +93,17 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 700px) {
+    .links {
+        transform: scale(.8);
+    }
+
+    .navBar div:nth-child(1) {
+        display: none;
+    }
+
+    .navBar {
+        justify-content: center;
+    }
+}

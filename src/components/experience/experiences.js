@@ -6,6 +6,7 @@ import { SiJavascript } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaCss3 } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
+import { SiSequelize } from "react-icons/si";
 
 
 export const iconsForStack = {
@@ -45,6 +46,10 @@ export const iconsForStack = {
     html: {
         name: "Html",
         icon: FaHtml5
+    },
+    sequelize: {
+        name: "Sequelize",
+        icon: SiSequelize
     }
 }
 
@@ -54,6 +59,6 @@ export const experiences = [
         linkExperience: "https://www.youtube.com/watch?v=fVJ6mqh1T1s",
         url: `https://img.youtube.com/vi/fVJ6mqh1T1s/hqdefault.jpg`,
         detail: "App de gestión para una startup educativa, su modelo de negocio se basa en invitar a supervisores a la app y que estos puedan invitar tantos empleados según el arreglo con la startup, una vez invitados , el supervisor les asigna los cursos disponibles en la app mas día y horario a enviar, a los empleados les llega vía email su invitación a cada clase del curso hasta completarlo.",
-        stack: [iconsForStack.react, iconsForStack.tailwind, iconsForStack.reduxToolkit, iconsForStack.nodejs, iconsForStack.expressjs]
+        stack: [iconsForStack.react, iconsForStack.tailwind, iconsForStack.reduxToolkit, iconsForStack.nodejs, iconsForStack.expressjs, iconsForStack.sequelize]
     }
 ]

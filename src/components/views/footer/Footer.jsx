@@ -2,7 +2,6 @@ import style from "../footer/Footer.module.css"
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { FaCode } from "react-icons/fa6";
 import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
 import { forwardRef } from "react";
@@ -19,12 +18,12 @@ export const Footer = forwardRef((_, ref) => {
                         <p style={{ fontWeight: "bold", color: "white" }}>Argentina Buenos Aires</p>
                     </div>
                     <div>
-                        <CgMail className={style.icons} />
-                        <p style={{ fontWeight: "bold", color: "white" }}>gonzalobaeznoriega@gmail.com</p>
+                        <a style={{ textDecoration: "none", color: "aliceblue" }} href="mailto:gonzaasd7@gmail.com" ><CgMail className={style.icons} /></a>
+                        <p style={{ fontWeight: "bold", color: "white" }}> gonzalobaeznoriega@gmail.com</p>
                     </div>
                     <div>
-                        <FaWhatsapp className={style.icons} />
-                        <p style={{ fontWeight: "bold", color: "white" }}>+54 1161159151</p>
+                        <a style={{ textDecoration: "none", color: "aliceblue" }} href="https://wa.me/1161159151" target="_blank"> <FaWhatsapp className={style.icons} /></a>
+                        <p style={{ fontWeight: "bold", color: "white" }}> +54 1161159151</p>
                     </div>
                 </div>
                 <div className={style.contact}>
