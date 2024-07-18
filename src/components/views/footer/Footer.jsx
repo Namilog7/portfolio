@@ -6,37 +6,43 @@ import { FaCode } from "react-icons/fa6";
 import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
 import { forwardRef } from "react";
+import { IoLocationSharp } from "react-icons/io5";
 
 export const Footer = forwardRef((_, ref) => {
     return (
         <footer className={style.footer} ref={ref}>
             <div className={style.container}>
-                <div className={style.contact}>
-                    <div className={style.contactdata}>
-                        <h4>Contáctame</h4>
-                        <div className={style.email}>
-                            <CgMail className={style.icons} />
-                            <p>gonzalodavidbaeznoriega@gmail.com</p>
-                        </div>
-                        <div className={style.wpp}>
-                            <FaWhatsapp className={style.icons} />
-                            <p>+54 1161159151</p>
-                        </div>
+                <div className={style.data}>
+                    <h4>Contáctame</h4>
+                    <div>
+                        <IoLocationSharp className={style.icons} />
+                        <p style={{ fontWeight: "bold", color: "white" }}>Argentina Buenos Aires</p>
+                    </div>
+                    <div>
+                        <CgMail className={style.icons} />
+                        <p style={{ fontWeight: "bold", color: "white" }}>gonzalobaeznoriega@gmail.com</p>
+                    </div>
+                    <div>
+                        <FaWhatsapp className={style.icons} />
+                        <p style={{ fontWeight: "bold", color: "white" }}>+54 1161159151</p>
                     </div>
                 </div>
-                <div className={style.redsocial}>
-                    <h4>Redes Sociales</h4>
-                    <a href="" className={style.link}><FaInstagram className={style.icons} /> </a>
-                    <a href="" className={style.link}><FaSquareFacebook className={style.icons} /> </a>
-                    <a href="" className={style.link}><FaGithub className={style.icons} /> </a>
-                </div>
-                <div className={style.suggestions}>
-                    <h4 style={{ margin: 0, fontSize: "x-large" }}>Consejos</h4>
-                    <p style={{ margin: 0 }}> Si tienes consejos que me ayuden a mejorar te lo agradeceria</p>
-                    <form action="" id="form" className={style.formSug}>
-                        <input type="text" className={style.inputSug} />
-                        <button className={style.button}>Enviar Consejo</button>
-                    </form>
+                <div className={style.contact}>
+                    <div className={style.divIcons}>
+                        <h4>Redes</h4>
+                        <div>
+                            <a href="https://www.instagram.com/gonzalo.baeznoriega/?igsh=MXVjOGl5a2d6ZDI3MA%3D%3D" className={style.link}><FaInstagram className={style.icons} /> </a>
+                            <p style={{ fontWeight: "bold", color: "white" }}>Instagram</p>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/gonzaelgunner.baez?mibextid=ZbWKwL" className={style.link}><FaSquareFacebook className={style.icons} /> </a>
+                            <p style={{ fontWeight: "bold", color: "white" }}>Facebook</p>
+                        </div>
+                        <div>
+                            <a href="https://github.com/Namilog7" className={style.link}><FaGithub className={style.icons} /> </a>
+                            <p style={{ fontWeight: "bold", color: "white" }}>Github</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

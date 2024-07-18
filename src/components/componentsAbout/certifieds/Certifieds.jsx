@@ -6,7 +6,7 @@ export const Certifieds = () => {
         <section className={style.section}>
             <div className={style.content}>
                 {certifieds.map((item, index) => {
-                    return <a href={certifiedsData[index].url} target="_blank" >
+                    return <a href={certifiedsData[index].url} target="_blank" style={{ width: "max-content" }} >
                         <div className={style.images} >
                             <img src={item} alt={item} className={style.img} />
                             <div className={style.divData}>

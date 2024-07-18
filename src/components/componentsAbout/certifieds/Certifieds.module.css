@@ -8,8 +8,10 @@
 }
 
 .content {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     row-gap: 25px;
 }
 
@@ -51,4 +53,10 @@
 .images:hover .divData {
     opacity: 1;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

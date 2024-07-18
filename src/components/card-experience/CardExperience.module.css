@@ -105,3 +105,9 @@
 .linkExp:visited {
     color: #008c72;
 }
+
+@media (max-width: 950px) {
+    .card {
+        transform: scale(.8);
+    }
+}

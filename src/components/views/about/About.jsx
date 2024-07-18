@@ -1,14 +1,15 @@
-import { AboutMe } from "../../componentsAbout/about/AboutMe"
+import { AboutMe } from "../../componentsAbout/about/AboutMe.jsx"
 import style from "../about/About.module.css"
-import { Link, Route, Routes, useLocation } from "react-router-dom"
-import { Stack } from "../../componentsAbout/stack/Stack"
-import { Learning } from "../../componentsAbout/learning/Learning"
-import { Certifieds } from "../../componentsAbout/certifieds/Certifieds"
-import { forwardRef, useRef } from "react"
+import { Link, useNavigate, Route, Routes, useLocation } from "react-router-dom"
+import { Stack } from "../../componentsAbout/stack/Stack.jsx"
+import { Certifieds } from "../../componentsAbout/certifieds/Certifieds.jsx"
+import { forwardRef, useEffect, useRef } from "react"
+import { Learning } from "../../componentsAbout/learning/Learning.jsx"
 
 export const About = forwardRef((_, ref) => {
     const match = useLocation();
     const refA = useRef(null);
+    const navigate = useNavigate()
 
     const addAnimation = (e) => {
         if (e.target.id === match.pathname) return console.log("ya esta")
@@ -17,6 +18,9 @@ export const About = forwardRef((_, ref) => {
             refA.current.classList.remove(style.animation)
         }, 500)
     }
+    useEffect(() => {
+        navigate("/aboutme")
+    }, [])
 
     return (
         <section className={style.section} ref={ref}>

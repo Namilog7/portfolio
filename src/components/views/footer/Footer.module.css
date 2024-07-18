@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 200px;
+    height: max-content;
     background-color: #008c72;
     display: flex;
     justify-content: center;
@@ -13,22 +13,33 @@
 
 .footer h4 {
     color: rgb(168, 236, 30);
+    text-align: center;
+    font-size: x-large;
+    margin: 0;
 }
 
 .container {
-    width: 70%;
-    height: 100%;
+    width: 60%;
+    height: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.data>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .icons {
     font-size: 35px;
     color: white;
+    display: block;
 }
 
 .icons:hover {
     color: #004e5c;
+    cursor: pointer;
 }
 
 .link {
@@ -37,77 +48,30 @@
     text-decoration: none;
 }
 
-.redsocial {
-    width: max-content;
-    font-size: x-large;
-}
-
-.redsocial h4 {
-    margin: 0;
-}
-
-.iconstatic {
-    font-size: 100px;
-    color: #004e5c;
-}
-
-.contact {
-    height: auto;
+.data {
     display: flex;
+    flex-direction: column;
+}
+
+.divIcons {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    height: 85%;
 }
 
-.contact h4 {
-    margin: 0;
-    font-size: x-large;
-}
-
-.email {
+.divIcons>div {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.email p {
-    margin: 0;
-}
+@media (max-width: 950px) {
+    .divIcons p {
+        display: none;
+    }
 
-.contactdata {
-    height: auto;
-
-}
-
-.wpp {
-    display: flex;
-    align-items: center;
-}
-
-.wpp p {
-    margin: 0;
-}
-
-.suggestions {
-    height: 100%;
-}
-
-.inputSug {
-    height: 25px;
-    display: block;
-    width: 65%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.button {
-    font-family: system-ui;
-    font-weight: bold;
-    width: 67%;
-    height: 30px;
-    border: 1px solid #008c72;
-    background-color: yellowgreen;
-}
-
-.button:hover {
-    background-color: rgb(84, 216, 7);
-    color: aliceblue;
-    border: 1px solid #004e5c;
+    .data p {
+        display: none;
+    }
 }
