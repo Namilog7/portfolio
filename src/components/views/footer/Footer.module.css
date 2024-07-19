@@ -69,4 +69,12 @@
     .data p {
         display: none;
     }
+
+    .container {
+        margin-bottom: 10px;
+    }
+
+    .location {
+        display: none;
+    }
 }

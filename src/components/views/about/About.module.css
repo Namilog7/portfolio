@@ -140,7 +140,15 @@
         font-size: small;
     }
 
+    .image {
+        border: 0;
+    }
+
+    .image img {
+        display: none;
+    }
+
     .about {
-        font-size: small;
+        width: 90%;
     }
 }

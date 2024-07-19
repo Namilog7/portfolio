@@ -14,11 +14,11 @@ export const Footer = forwardRef((_, ref) => {
                 <div className={style.data}>
                     <h4>Contáctame</h4>
                     <div>
-                        <IoLocationSharp className={style.icons} />
-                        <p style={{ fontWeight: "bold", color: "white" }}>Argentina Buenos Aires</p>
+                        <IoLocationSharp className={`${style.icons} ${style.location}`} />
+                        <p style={{ fontWeight: "bold", color: "white" }}>Argentina, Buenos Aires</p>
                     </div>
                     <div>
-                        <a style={{ textDecoration: "none", color: "aliceblue" }} href="mailto:gonzaasd7@gmail.com" ><CgMail className={style.icons} /></a>
+                        <a style={{ textDecoration: "none", color: "aliceblue" }} href="mailto:gonzalobaeznoriega@gmail.com" ><CgMail className={style.icons} /></a>
                         <p style={{ fontWeight: "bold", color: "white" }}> gonzalobaeznoriega@gmail.com</p>
                     </div>
                     <div>

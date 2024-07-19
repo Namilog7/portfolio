@@ -17,6 +17,7 @@ export const CardExperience = ({ name, url, detail, stack, linkExperience }) => 
                         return <a href={st.link} target="_blank" className={style.a} key={index}><st.icon className={style.icons} /></a>
                     })}
                 </div>
+                <a href={linkExperience} style={{ color: "initial" }} > <RiArrowRightUpLine className={style.arrowdata} /></a>
             </div>
         </div>
     )

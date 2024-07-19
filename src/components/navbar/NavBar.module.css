@@ -95,10 +95,6 @@
 }
 
 @media (max-width: 700px) {
-    .links {
-        transform: scale(.8);
-    }
-
     .navBar div:nth-child(1) {
         display: none;
     }

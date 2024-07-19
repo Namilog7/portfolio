@@ -17,9 +17,9 @@ export const Presentation = () => {
                 <div>
                     <p>Hola! soy</p>
                 </div>
-                <div>
-                    <h1><span className={style.name}>Gonzalo Baez.</span></h1>
-                </div>
+
+                <h1 className={style.name}>Gonzalo Baez.</h1>
+
                 <div>
                     <p>Desarrollador <span className={style.namespan}>Full Stack </span>
                         buscando ganar experiencia orientada al <span className={style.namespan}>Frontend</span>,
