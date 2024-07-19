@@ -19,12 +19,7 @@ export const About = forwardRef((_, ref) => {
         }, 500)
     }
     useEffect(() => {
-        window.addEventListener("beforeunload", () => {
-            navigate("/")
-        })
-        setTimeout(() => {
-            navigate("/aboutme")
-        }, 400)
+        navigate("/aboutme")
     }, [])
 
     return (

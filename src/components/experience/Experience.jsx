@@ -6,7 +6,7 @@ export const Experience = () => {
 
     return (
         <div className={style.contenedor}>
-            <h2>Experiencia & Proyectos</h2>
+            <h2>Experiencia</h2>
             <section className={style.sectionExp}>
                 {experiences.map(exp => {
                     return <CardExperience name={exp.name} url={exp.url} detail={exp.detail} stack={exp.stack} linkExperience={exp.linkExperience} />
