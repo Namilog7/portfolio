@@ -34,10 +34,6 @@ export const Footer = forwardRef((_, ref) => {
                             <p style={{ fontWeight: "bold", color: "white" }}>Instagram</p>
                         </div>
                         <div>
-                            <a href="https://www.facebook.com/gonzaelgunner.baez?mibextid=ZbWKwL" className={style.link}><FaSquareFacebook className={style.icons} /> </a>
-                            <p style={{ fontWeight: "bold", color: "white" }}>Facebook</p>
-                        </div>
-                        <div>
                             <a href="https://github.com/Namilog7" className={style.link}><FaGithub className={style.icons} /> </a>
                             <p style={{ fontWeight: "bold", color: "white" }}>Github</p>
                         </div>
