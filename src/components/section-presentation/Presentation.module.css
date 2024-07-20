@@ -42,6 +42,7 @@
 
 .name {
     animation: animPresent 1s ease-in-out .2s backwards;
+    line-height: 1;
     margin: 0;
 }
 
