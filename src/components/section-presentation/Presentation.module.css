@@ -167,7 +167,10 @@
         display: flex;
         width: 100%;
         justify-content: center;
+    }
 
+    .section {
+        width: 90%;
     }
 
     .imageProfile {

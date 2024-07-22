@@ -135,7 +135,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
     .links p {
         font-size: small;
     }
