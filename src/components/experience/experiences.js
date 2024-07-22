@@ -49,7 +49,8 @@ export const iconsForStack = {
     },
     sequelize: {
         name: "Sequelize",
-        icon: SiSequelize
+        icon: SiSequelize,
+        link: "https://sequelize.org"
     }
 }
 
