@@ -64,7 +64,7 @@
     height: 60%;
     animation: animPresentInverse 1.5s ease-in-out backwards;
     overflow: hidden;
-    border: 2px solid yellowgreen;
+    border: 2px solid #0f66a9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +79,7 @@
 }
 
 .name {
-    color: #008c72;
+    color: #26b2ff;
     font-size: 80px;
     text-shadow: -1px 0 #000,
         1px -1px 0 #000,
@@ -88,7 +88,7 @@
 }
 
 .namespan {
-    color: #008c72;
+    color: #26b2ff;
     margin: 0;
     padding: 0;
 
@@ -127,10 +127,10 @@
 }
 
 .buttonCv {
-    background-color: #004e5c;
+    background-color: #0f2542;
     width: 150px;
     height: 50px;
-    border: 2px solid #008c72;
+    border: 2px solid #26b2ff;
     font-family: system-ui;
     font-weight: bolder;
     font-size: medium;

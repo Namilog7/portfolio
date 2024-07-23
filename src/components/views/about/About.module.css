@@ -2,48 +2,52 @@
 
 .section {
     width: 100%;
-    height: 550px;
+    min-height: 450px;
+    max-height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 65px;
+    padding-top: 80px;
 }
 
 .about {
-    width: 65%;
-    height: 80%;
+    width: 70%;
+    height: 90%;
     position: relative;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .nav {
-    width: 20%;
-    height: 99.5%;
-    border: 1px solid yellowgreen;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #008c72;
+    width: 100%;
+    height: max-content;
+    border: 1px solid black;
+    background-color: #0f66a9;
     position: relative;
     z-index: 5;
 }
 
 .links {
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
     overflow: hidden;
 }
 
+.links p {
+    padding: 5px;
+}
+
 .links p:hover {
-    background-color: #004e5c;
+    background-color: #26b2ff;
     cursor: pointer;
 }
 
 .active {
-    background-color: #004e5c;
+    background-color: #26b2ff;
 }
 
 .links p {
@@ -60,36 +64,11 @@
     animation: changeView .4s ease-in-out;
 }
 
-.image {
-    margin-top: 5px;
-    width: 90%;
-    height: 40%;
-    border-radius: 100%;
-    border: 1px solid aliceblue;
-    overflow: hidden;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-}
-
-.image::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background-color: yellowgreen;
-    z-index: -1;
-}
-
 .section h2 {
     font-size: 50px;
     text-align: center;
     color: aliceblue;
-    text-decoration: overline yellowgreen;
+    text-decoration: overline #46fff9;
     font-family: "Bevan", serif;
     font-weight: 400;
     font-style: normal;
@@ -97,26 +76,14 @@
 }
 
 .routes {
-    width: 80%;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
+    height: auto;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.routes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://wallpaperaccess.com/full/1338376.jpg");
-    background-size: cover;
-    z-index: -1;
-}
 
 @keyframes changeView {
     0% {
@@ -135,24 +102,12 @@
 }
 
 
-@media (max-width: 980px) {
+@media (max-width: 780px) {
     .links p {
-        font-size: small;
-    }
-
-    .image {
-        border: 0;
-    }
-
-    .image img {
-        display: none;
+        font-size: small
     }
 
     .about {
         width: 90%;
-    }
-
-    .image::after {
-        background-color: #008c72;
     }
 }

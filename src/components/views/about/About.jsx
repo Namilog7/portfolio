@@ -27,9 +27,6 @@ export const About = forwardRef((_, ref) => {
             <h2>Sobre mi & Stack</h2>
             <div className={style.about} >
                 <nav className={style.nav} >
-                    <div className={style.image} >
-                        <img src="fotoportfolio.jpg" alt="fotoperfil" />
-                    </div>
                     <div className={style.links} >
                         <Link to="/aboutme" style={{ textDecoration: "none" }}> <p id="/aboutme" onClick={() => addAnimation(event)} className={match.pathname == "/aboutme" ? style.active : null} >Un poco de mi</p></Link>
                         <Link to="/stack" style={{ textDecoration: "none" }} ><p id="/stack" onClick={() => addAnimation(event)} className={match.pathname == "/stack" ? style.active : null} >Stack</p></Link>

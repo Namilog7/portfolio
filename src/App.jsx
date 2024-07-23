@@ -13,7 +13,11 @@ function App() {
   const section4 = useRef(null);
 
   const scrollComponent = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth', block: "end" })
+    console.log(ref.current.id)
+    if (ref.current.id == "header") {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "end" })
+    } else
+      ref.current.scrollIntoView({ behavior: 'smooth', block: "start" })
   }
 
 

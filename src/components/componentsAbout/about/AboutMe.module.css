@@ -13,18 +13,12 @@
     color: antiquewhite;
     font-size: larger;
     padding: 20px;
-    border: 1px solid yellowgreen;
+    border: 1px solid #0f66a9;
     backdrop-filter: blur(10px);
 }
 
 @media (max-width:700px) {
     .content {
         width: 100%;
-    }
-}
-
-@media (max-width:500px) {
-    .content {
-        transform: scale(.8);
     }
 }

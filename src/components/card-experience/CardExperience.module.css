@@ -13,7 +13,7 @@
 .data {
     width: 40%;
     padding-left: 10px;
-    background-color: #008c72;
+    background-color: #0f66a9;
     border-radius: 10px 10px 10px 10px;
     text-align: start;
     display: flex;
@@ -39,11 +39,15 @@
 
 .data h3 {
     font-size: 25px;
-    color: rgb(168, 236, 30);
+    color: #46fff9;
     margin: 0;
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-shadow: 1px 0 #000,
+        3px 1px 0 #000,
+        0px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .img {
@@ -91,13 +95,18 @@
     transform: scale(1.1);
 }
 
+.img:hover .icons {
+    color: #46fff9;
+}
+
 .icons {
     font-size: 35px;
     margin: 4px;
+    color: black;
 }
 
 .icons:hover {
-    color: yellowgreen;
+    color: #46fff9;
     cursor: pointer;
 }
 
@@ -112,8 +121,11 @@
     height: 100%;
 }
 
-.linkExp:visited {
-    color: #008c72;
+
+.arrowdata:hover {
+    color: #46fff9;
+    width: max-content;
+    height: max-content;
 }
 
 @media (max-width: 950px) {

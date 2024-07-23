@@ -12,7 +12,7 @@ export const Footer = forwardRef((_, ref) => {
         <footer className={style.footer} ref={ref}>
             <div className={style.container}>
                 <div className={style.data}>
-                    <h4>Contáctame</h4>
+                    <h4>Contacto</h4>
                     <div>
                         <IoLocationSharp className={`${style.icons} ${style.location}`} />
                         <p style={{ fontWeight: "bold", color: "white" }}>Argentina, Buenos Aires</p>

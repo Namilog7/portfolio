@@ -5,7 +5,7 @@ import style from "./Header.module.css"
 
 export const Header = forwardRef((_, ref) => {
     return (
-        <header className={style.header} ref={ref}>
+        <header className={style.header} ref={ref} id="header">
             <Presentation />
         </header>
     );

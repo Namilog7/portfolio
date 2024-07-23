@@ -11,11 +11,12 @@ Currently, two official plugins are available:
 -------------------------------------------------------------------------------------------------------------------------------
 Paleta de colores :
 
-.color1 {color: #060609;}
-.color2 {color: #06161d;}
-.color3 {color: #092537;}
-.color4 {color: #0f394f;}
-.color5 {color: #154a6c;}
+.color1 {color: #140f07;}
+.color2 {color: #0f2542;}
+.color3 {color: #0f66a9;}
+.color4 {color: #26b2ff;}
+.color5 {color: #46fff9;}
+
 
 Opcion de la imagen de perfil
 
