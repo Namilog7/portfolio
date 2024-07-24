@@ -142,9 +142,9 @@
 }
 
 .buttonCv:hover {
-    background-color: #008c72;
+    background-color: #0f66a9;
     cursor: pointer;
-    color: wheat;
+    color: aliceblue;
 }
 
 .icons {
