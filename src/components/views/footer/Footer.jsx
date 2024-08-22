@@ -18,7 +18,7 @@ export const Footer = forwardRef((_, ref) => {
                         <p style={{ fontWeight: "bold", color: "white" }}>Argentina, Buenos Aires</p>
                     </div>
                     <div>
-                        <a style={{ textDecoration: "none", color: "aliceblue" }} href="mailto:gonzalobaeznoriega@gmail.com" ><CgMail className={style.icons} /></a>
+                        <a style={{ textDecoration: "none", color: "aliceblue" }} href="mailto:gonzalodavidbaeznoriega@gmail.com" ><CgMail className={style.icons} /></a>
                         <p style={{ fontWeight: "bold", color: "white" }}> gonzalobaeznoriega@gmail.com</p>
                     </div>
                     <div>
