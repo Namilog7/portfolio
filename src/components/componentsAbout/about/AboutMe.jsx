@@ -10,7 +10,7 @@ export const AboutMe = () => {
                     <br />
                     🎯Soy autodidacta y busco ganar experiencia en el mundo Tech. Actualmente tomando cursos en Platzi
                     <br />
-                    Por mi horario de trabajo mañana y tarde/noche me es difícil ajustarme a una carrera informática, pero de entrar en la industria mi plan es hacer una tecnicatura en analisis de sistemas a la par del trabajo.
+                    Por mi horario de trabajo mañana y tarde/noche me es difícil ajustarme a una carrera informática, pero de entrar en la industria mi plan es hacer una tecnicatura en análisis de sistemas a la par del trabajo.
                 </p>
             </div>
         </section>
