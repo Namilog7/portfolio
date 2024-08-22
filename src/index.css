@@ -8,4 +8,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 5;
+    position: relative;
+}
+
+#root::after {
+    content: "";
+    z-index: -5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.5);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/965/575/non_2x/modern-shiny-gradient-blue-banner-background-free-vector.jpg");
+    background-attachment: fixed;
 }
