@@ -19,7 +19,7 @@ export const Footer = forwardRef((_, ref) => {
                     </div>
                     <div>
                         <a style={{ textDecoration: "none", color: "aliceblue" }} href="mailto:gonzalodavidbaeznoriega@gmail.com" ><CgMail className={style.icons} /></a>
-                        <p style={{ fontWeight: "bold", color: "white" }}> gonzalobaeznoriega@gmail.com</p>
+                        <p style={{ fontWeight: "bold", color: "white" }}> gonzalodavidbaeznoriega@gmail.com</p>
                     </div>
                     <div>
                         <a style={{ textDecoration: "none", color: "aliceblue" }} href="https://wa.me/+541161159151" target="_blank"> <FaWhatsapp className={style.icons} /></a>
