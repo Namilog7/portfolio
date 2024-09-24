@@ -22,8 +22,8 @@ export const Presentation = () => {
 
                 <div>
                     <p>Desarrollador <span className={style.namespan}>Full Stack </span>
-                        buscando ganar experiencia orientada al <span className={style.namespan}>Frontend</span>,
-                        proactivo y aunque me gusta ser autodidacta, con mentoría podría aprender mucho mas rápido.</p>
+                        buscando ganar experiencia orientada al <span className={style.namespan}>Frontend </span>
+                        en un inicio, proactivo y aunque me gusta ser autodidacta, con mentoría podría aprender mucho mas rápido.</p>
                 </div>
                 <div className={style.divButton}>
                     <a href="https://github.com/Namilog7" target="_blank" className={style.links}><FaGithub className={style.icons} />   </a>
